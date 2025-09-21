@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
-//react-icons
-//import { AiFillEdit, AiFillDelete } from 'react-icons/ai';
+import { AiFillEdit, AiFillDelete } from 'react-icons/ai';
 import Pizza from '../models/Pizza';
 
 interface SinglePizzaProps {
@@ -15,8 +14,8 @@ const SinglePizza: FC<SinglePizzaProps> = ({ pizza }) => {
             <span>{pizza.price} ₽</span>
 
             <div className="pizza-controls">
-                {/* <AiFillEdit />
-                <AiFillDelete /> */}
+                <AiFillEdit />
+                <AiFillDelete />
             </div>
         </div>
     )
