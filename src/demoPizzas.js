@@ -4,7 +4,7 @@ const demoPizzas = [
     {title: 'Saussage', price: 531, img: 'pizza-3.jpg', id: 3},
     {title: '3 Cheese', price: 770, img: 'pizza-4.jpg', id: 4},
     {title: 'Veggie', price: 900, img: 'pizza-5.jpg', id: 5},
-    {title: 'Mixed', price: 620, img: 'pizza-6.jpg', id: 6},
+    //{title: 'Mixed', price: 620, img: 'pizza-6.jpg', id: 6},
 ];
 
 export default demoPizzas;

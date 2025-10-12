@@ -2,6 +2,7 @@ import React, { FC, useEffect, useState } from 'react';
 import AddPizzaForm from '../components/AddPizzaForm';
 import DisplayPizzas from '../components/DisplayPizzas';
 import Pizza from '../models/Pizza';
+import demoPizzas from '../demoPizzas';
 
 
 const HomeFeature: FC = () => {
@@ -29,6 +30,9 @@ const HomeFeature: FC = () => {
     const pizzasState = localStorage.getItem('pizzasState');
     if (pizzasState) {
       setPizzasList(JSON.parse(pizzasState));
+    } else {
+      setPizzasList(demoPizzas);
+      localStorage.setItem('pizzasState', JSON.stringify(demoPizzas));
     }
   }, []);
 
