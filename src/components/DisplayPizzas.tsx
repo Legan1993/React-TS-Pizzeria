@@ -22,6 +22,10 @@ const DisplayPizzas: FC<DisplayPizzasProps> = ({ pizzasList, updatePizza, delete
   const handlePrev = () => {
     setCurPage(curPage - 1);
   }
+  
+  if (!pizzasPaginated.length && curPage > 1) {
+    handlePrev();
+  }
 
   return (
     <>
