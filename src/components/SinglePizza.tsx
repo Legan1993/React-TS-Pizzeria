@@ -23,7 +23,7 @@ const SinglePizza: FC<SinglePizzaProps> = ({ pizza, updatePizza, deletePizza }) 
 
     return (
         <div className="pizza">
-            <img src={`/images/${pizza.img}`} alt={pizza.title}/>
+            <img src={`${process.env.PUBLIC_URL}/images/${pizza.img}`} alt={pizza.title}/>
             <h2><Link to={`/pizza/${pizza.id}`}>{pizza.title}</Link></h2>
             <span>{pizza.price} ₽</span>
 

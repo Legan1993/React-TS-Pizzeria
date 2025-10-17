@@ -1,6 +1,7 @@
 {
   "name": "cra-typescript-app",
   "version": "0.1.0",
+  "homepage": "/React-TS-Pizzeria",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

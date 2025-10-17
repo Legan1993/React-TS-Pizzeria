@@ -21,7 +21,7 @@ const PizzaFeature: FC = () => {
         <>
             <span className="heading">Ваша пицца</span>
             <div className="pizza pizza-page">
-                <img src={`/images/${pizza?.img}`} alt={pizza?.title} />
+                <img src={`${process.env.PUBLIC_URL}/images/${pizza?.img}`} alt={pizza?.title} />
                 <h2>{pizza?.title}</h2>
                 <span>{pizza?.price} ₽</span>
                 <p>Лучшая в городе!</p>
